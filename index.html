@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desenvolvimento Web - Petry Estevam de Aquino Borges</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <button id="modo-noturno">Modo Noturno</button>
 </head>
 <body>
+
     <header>
         <h1>Desenvolvimento Web - Petry Estevam de Aquino Borges</h1>
         <nav>
@@ -15,6 +18,32 @@
             </ul>
         </nav>
     </header>
+
+    <script>
+        const modoNoturnoButton = document.getElementById("modo-noturno");
+        const body = document.body;
+    
+        modoNoturnoButton.addEventListener("click", () => {
+            body.classList.toggle("modo-noturno");
+        });
+
+        const linksDoMenu = document.querySelectorAll("nav ul li a");
+
+linksDoMenu.forEach(link => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute("href").substring(1);
+        const targetSection = document.getElementById(targetId);
+        
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: "smooth"
+            });
+        }
+    });
+});
+    </script>
 
     <section id="sobre">
         <h2>Sobre Mim</h2>
@@ -169,4 +198,3 @@
     </footer>
 </body>
 </html>
-
