@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Circle-icons-dev.svg/1024px-Circle-icons-dev.svg.png" type="image/x-icon">
+    <title>Cursos de Ciências da Computação</title>
+</head>
+
+<body>
+    <header>
+        <button onclick="Icon()" id="icon"><img class="icone"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Circle-icons-dev.svg/1024px-Circle-icons-dev.svg.png"></button>
+        <div>
+            <button id="Back">
+                <h2>Back-end</h2>
+            </button>
+            <div id="opcoesBack" style="display: none;" class="opcoes">
+                <ul>
+                    <li><button id="Java" onclick="Java()">Java</button></li>
+                    <li>
+                        <div class="linha"></div>
+                    </li>
+                    <li><button id="C" onclick="C()">C#</button></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <button>
+                <h2 id="Front">Front-end</h2>
+            </button>
+            <div id="opcoesFront" style="display: none;" class="opcoes">
+                <ul>
+                    <li><button id="HTML" onclick="HTML()">HTML e CSS</button></li>
+                    <li>
+                        <div class="linha"></div>
+                    </li>
+                    <li><button id="JS" onclick="JS()">JavaScript</button></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <button>
+                <h2 id="Exatas">Exatas</h2>
+            </button>
+            <div id="opcoesExatas" style="display: none;" class="opcoes">
+                <ul>
+                    <li><button id="GAAL" onclick="GAAL()">GAAL</button></li>
+                    <li>
+                        <div class="linha"></div>
+                    </li>
+                    <li><button id="Estatistica" onclick="Estatistica()">Estatística</button></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div>
+                <button>
+                    <h2 id="Robotica">Robotica</h2>
+                </button>
+                <div id="opcoesRobotica" style="display: none;" class="opcoes">
+                    <ul>
+                        <li><button id="Arduino" onclick="Arduino()">Arduino</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="curso">
+            <a href="https://www.youtube.com/playlist?list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm" target="_blank"><img class="imagem"
+                    src="IMAGENS/JS/1.png" alt="Curso de JavaScript"></a>
+            <a>
+                <h3>Curso Grátis de JavaScript (Youtube)</h3>
+            </a>
+        </div>
+        <div class="curso">
+            <a href="https://www.youtube.com/playlist?list=PLnex8IkmReXxZEXje06kW1uCwm5iC8M_Z" target="_blank"><img class="imagem"
+                    src="IMAGENS/JS/1.png" alt="Curso de JavaScript"></a>
+            <a>
+                <h3>Curso Grátis de JavaScript (Youtube)</h3>
+            </a>
+        </div>
+        <div class="curso">
+            <a
+                href="https://www.udemy.com/course/curso-javascript/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Webindex_Catchall_la.PT_cc.BR&utm_term=_._ag_114148736799_._ad_680777648618_._de_c_._dm__._pl__._ti_dsa-466335283586_._li_1001566_._pd__._&gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5p8eAEjGnB2Xrify9ojv_c4aTodeLGS2JqmSh7cKNa4VvT7xMEOJafxoCvK8QAvD_BwE" target="_blank"><img
+                    class="imagem" src="IMAGENS/JS/2.png" alt="Curso de JavaScript"></a>
+            <a>
+                <h3>Curso Pago de JavaScript (Udemy)</h3>
+            </a>
+        </div>
+        <div class="curso">
+            <a href="https://www.alura.com.br/formacao-javascript-front-end" target="_blank"><img class="imagem" src="IMAGENS/JS/3.png"
+                    alt="Curso de JavaScript"></a>
+            <a>
+                <h3>Curso Pago de JavaScript (Alura)</h3>
+            </a>
+        </div>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

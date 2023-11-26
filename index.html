@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Circle-icons-dev.svg/1024px-Circle-icons-dev.svg.png" type="image/x-icon">
+    <title>Cursos de Ciências da Computação</title>
+</head>
+
+<body>
+    <header>    
+        <button onclick="Icon()" id="icon"><img class="icone"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Circle-icons-dev.svg/1024px-Circle-icons-dev.svg.png"></button>
+        <div>
+            <button id="Back">
+                <h2>Back-end</h2>
+            </button>
+            <div id="opcoesBack" style="display: none;" class="opcoes">
+                <ul>
+                    <li><button id="Java" onclick="Java()">Java</button></li>
+                    <li>
+                        <div class="linha"></div>
+                    </li>
+                    <li><button id="C" onclick="C()">C#</button></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <button>
+                <h2 id="Front">Front-end</h2>
+            </button>
+            <div id="opcoesFront" style="display: none;" class="opcoes">
+                <ul>
+                    <li><button id="HTML" onclick="HTML()">HTML e CSS</button></li>
+                    <li>
+                        <div class="linha"></div>
+                    </li>
+                    <li><button id="JS" onclick="JS()">JavaScript</button></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <button>
+                <h2 id="Exatas">Exatas</h2>
+            </button>
+            <div id="opcoesExatas" style="display: none;" class="opcoes">
+                <ul>
+                    <li><button id="GAAL" onclick="GAAL()">GAAL</button></li>
+                    <li>
+                        <div class="linha"></div>
+                    </li>
+                    <li><button id="Estatistica" onclick="Estatistica()">Estatística</button></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div>
+                <button>
+                    <h2 id="Robotica">Robotica</h2>
+                </button>
+                <div id="opcoesRobotica" style="display: none;" class="opcoes">
+                    <ul>
+                        <li><button id="Arduino" onclick="Arduino()">Arduino</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- <nav>
+        <a href="#bem-vindo">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contact">Contato</a>
+    </nav> -->
+
+    <section>
+        <h1 id="bem-vindo">Bem-vindo ao nosso site!</h1>
+        <p>Nosso site é dedicado a apoiar estudantes que embarcaram no curso de Ciência da Computação e estão enfrentando desafios. Aqui, disponibilizamos uma seleção de cursos - gratuitos e pagos - para ajudá-lo a avançar no curso e ampliar seu conhecimento. É importante ressaltar que compartilhamos esses cursos, mas não somos responsáveis por sua criação. Nosso objetivo é ser um guia nessa jornada acadêmica, oferecendo recursos valiosos para impulsionar o seu aprendizado.</p>
+    </section>
+
+    <section>
+        <h3 id="sobre">Sobre nós</h3>
+        <p>Nós somos um grupo composto por quatro estudantes que enfrentaram desafios durante o primeiro período do curso de Ciência da Computação. Movidos por essa experiência, decidimos criar este site com o intuito de auxiliar outros alunos que possam enfrentar situações semelhantes às que enfrentamos. Este é apenas o protótipo inicial do nosso projeto.</p>
+        <p><strong>Integrantes do grupo:</strong> João Vitor Resende, Lucas Freitas, Petry Estevam e Richard Gabriel.</p>
+    </section>
+
+    <section>
+        <h3 id="contact">Entre em Contato</h3>
+        <p>Tem alguma dúvida ou precisa de mais informações? Entre em contato conosco!</p>
+        <p><strong>E-mail:</strong> trabalhowebdhc@gmail.com</p>
+    </section>
+    <footer>
+        &copy; 2023 Cursos de Ciências da Computação
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
